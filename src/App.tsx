@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png';
-import leftArrowImage from './assets/leftArrow.png';
+import leftArrowImage from './assets/leftarrow.png';
 import { GridItem } from './components/GridItem';
 
 import { levels, calculateImc, Level } from './helpers/imc';
@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={styles.main}>
       <header>
         <div className={styles.headerContainer}>
           <img src={poweredImage} alt="" width={150} />
